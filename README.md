@@ -8,7 +8,7 @@ When considering screen reader accessibility to your site, there are a few key r
 ## Semantic HTML 
 https://www.w3schools.com/html/html5_semantic_elements.aspLinks to an external site. 
 
-Semantic HTML is simply the use of pre-defined, meaningful tags in your markup. This allows for screenreader technology to cleverly analyze a webpage and provide extra functionality. Some may be straightforward such as "<main>", "<nav>", and "<section>". Importantly, "<div>" is not considered a semantically rich tag, and should not be used where other tags may apply. 
+Semantic HTML is simply the use of pre-defined, meaningful tags in your markup. This allows for screenreader technology to cleverly analyze a webpage and provide extra functionality. Some may be straightforward such as `<main>`, `<nav>`, and `<section>`. Importantly, `<div>` is not considered a semantically rich tag, and should not be used where other tags may apply. 
 
 When used correctly, screenreaders are able to scan a webpage much like a sighted person. 
 
@@ -27,8 +27,8 @@ Code example before and after.
 
 Incorrect: Using class names for styling
 
-<span class="h1"> Our Important Title </span>
-<p class="h4">Hello and welcome to our super cool website.</p>
+<span class=`h1`> Our Important Title </span>
+<p class=`h4`>Hello and welcome to our super cool website.</p>
 
 Correct: Using heading tags instead.
 
@@ -57,7 +57,7 @@ Take for example this image:
 
 image.png
 
-Alt text should capture the essential information within the image. For example: "Close up of graduating students, from behind." would be perfect for this image. Avoid using "image/picture of" or the file name within alt text. 
+Alt text should capture the essential information within the image. For example: `Close up of graduating students, from behind.` would be perfect for this image. Avoid using `image/picture of` or the file name within alt text. 
 
 https://www.w3.org/WAI/tutorials/images/functional/Links to an external site. 
 
@@ -66,20 +66,20 @@ Links should describe their purpose or destination.
 
 Incorrect: Click Here to see our menu. 
 
-<span><a href="oursite/menu"> Click Here</a></span>
+<span><a href=`oursite/menu`> Click Here</a></span>
 
-This read as - "Link 'Click Here'" which does not communicate the link's purpose or destination. 
+This read as - `Link 'Click Here'` which does not communicate the link's purpose or destination. 
 
 Correct: View our menu.
 
-<a href="oursite/menu"> View our menu </a>
+<a href=`oursite/menu`> View our menu </a>
 
-This read as - "Link 'View our menu'" when navigating through available links on the page. 
+This read as - `Link 'View our menu'` when navigating through available links on the page. 
 
 Correct: If you want to get a better idea of what you want, you can view our menu here.
 
-<span>If you want to get a better idea of what you want, you can <a href="oursite/menu"> view our menu here</a></span>
+<span>If you want to get a better idea of what you want, you can <a href=`oursite/menu`> view our menu here</a></span>
 
-This read as - "If you want to get a better idea of what you want, you can Link 'view our menu here'".
+This read as - `If you want to get a better idea of what you want, you can Link 'view our menu here'`.
 
 If your link is embedded within an image, consider separating them from each other or using the alt text of the image to communicate the link's purpose/destination. 
