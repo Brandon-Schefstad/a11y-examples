@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>a11y Example</title>
+</head>
+
+<body>
+    <h1>Important considerations</h1>
+    <h2>Alt Text</h2>
+    <img src="https://i.natgeofe.com/k/ad9b542e-c4a0-4d0b-9147-da17121b4c98/MOmeow1.png?wp=1&w=500&h=300"
+        alt="A cute gray and white cat">
+    <h2>Forms and Inputs</h2>
+    <form action="">
+        <label for="example_input">Label with an
+            input</label>
+        <input type="text" id="example_input">
+        <label for="example_input"
+            id="example_label"> Input with a aria
+            labelledby</label>
+        <input type="text"
+            aria-labelledby="example_label">
+
+    </form>
+    <h2>Links</h2>
+    <h3>Example of an inaccessible link</h3>
+    <span><a href="oursite/menu"> Click
+            Here</a></span>
+    <h3>Example of an accessible link</h3>
+    <span>If you want to get a better idea of what
+        you
+        want, you can <a href="oursite/menu"> view
+            our
+            menu here</a></span>
+</body>
+
+</html>
